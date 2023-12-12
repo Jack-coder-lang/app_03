@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="tailwindcss-3.3.5.js"></script>
+    <style>
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .animated-tomato {
+            animation: pulseAnimation 2s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="h-14 w-48 mt-0 ml-1" src="agro.jpg" alt="agro1">
+        </div>
+        <hr class="border-green-500 mt-2">
+    </header>
+    <div>
+        <div class="text-center mb-32 mt-8 font-bold ">
+            <div class="text-4xl text-green-600">
+                Connexion
+            </div>
+        </div>
+        <form class="mt-1" action="">
+            <div class="flex justify-end ">
+                <div>
+                    <img class="h-5/5 w-5/6 animated-tomato" src="../img/tomate.jpg" alt="">
+                </div>
+                <div class="justify-between px-5 mt-5 mr-24">
+                    <label for="" class="block">Email:</label>
+                    <input placeholder="Entrer votre email" type="email"
+                        class="border-green-500 border-2 p-2 rounded-sm w-96 h-16 rounded-l-lg rounded-r-lg border-solid mb-4 ">
+                    <label for="" class="block">Mot de passe:</label>
+                    <input placeholder="Entrer votre mot de passe "
+                        class="border-green-500 border-2 p-2 rounded-sm w-96 h-16 rounded-l-lg rounded-r-lg border-solid">
+                    <p class="mt-4">vous n'avez pas de compte ? <a class="text-green-400" href="#">Inscrivez-vous</a></p>
+
+                    <button
+                        class="p-3 bg-green-500 hover:bg-green-700 rounded-md w-96 mt-4 text-white">Valider</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

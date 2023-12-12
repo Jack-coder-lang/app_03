@@ -1,0 +1,155 @@
+mote<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoris</title>
+    <script src="tailwindcss-3.3.5.js"></script>
+</head>
+    <body>
+        <header>
+            <div class="flex gap-10 h-25  border border-green-300">
+                
+                <div class="">
+                    <img class="h-14 w-48 mt-0 mb-2 ml-1 mr-36" src="agro.jpg" alt="agro1">
+                </div>
+
+                <div class="flex justify-center mb-1 mt-1 mr-36 items-center border border-green-500 rounded-md bg-white shadow">
+                    <input type="text" class="block  pl-20 flex-1 py-2 px-3 focus:outline-none" placeholder="Vous cherchez un produit ?...">
+                    <span class="m-1 inline-flex ml-96 cursor-pointer items-center rounded-md bg-white px-2 py-2">
+                        <svg class="text-green-500 mr-10" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M21.07 16.83L19 14.71a3.08 3.08 0 0 0-3.4-.57l-.9-.9a7 7 0 1 0-1.41 1.41l.89.89a3 3 0 0 0 .53 3.46l2.12 2.12a3 3 0 0 0 4.24 0a3 3 0 0 0 0-4.29Zm-8.48-4.24a5 5 0 1 1 0-7.08a5 5 0 0 1 0 7.08Zm7.07 7.07a1 1 0 0 1-1.42 0l-2.12-2.12a1 1 0 0 1 0-1.42a1 1 0 0 1 1.42 0l2.12 2.12a1 1 0 0 1 0 1.42Z" />
+                        </svg>
+                    </span>
+                </div>
+
+                <div class="flex  mb-1 mt-1  items-center border border-green-500 rounded-md w-36 bg-green-500">
+                    <div class="flex">
+                    <!-- Updated Shopping Cart Icon -->
+                        <div class="flex">
+                            <img class="flex" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart-loaded.png" alt="shopping-cart-loaded"/>
+                            <span class="flex ml-1 font-bold text-white" id="cart-counter">0</span> <!-- Cart Counter -->
+                        </div>
+                        <div class="flex">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    
+        <div>
+            <form action="">
+                <div class="text-center mb-32 mt-16 font-bold ">
+                    <div class="text-3xl text-black-600">
+                       Favoris
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <table class="w-4/5 mt-1 border-separate">
+                        <thead class="bg-gray-50 border-b-2 border-gray-200">
+                            <tr>
+                                <th class="p-3 text-sm font-semibold tracking-wide">Produits</th>
+                                <th class="p-3 text-sm font-semibold tracking-wide">Prix</th>
+                                <th class="p-3 text-sm font-semibold tracking-wide">Statuts en stock</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="p-3 text-sm text-gray-700 flex mt-4 text-center"> <img class="h-14 " src="../img/product1.jpg" alt="">Nom du produits</td>
+                                <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                                <td class="p-3 text-sm text-gray-700">
+                                    <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                      </svg>
+                                      </button></td>
+                            </tr>
+                        <tr class="bg-gray-100">
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product2.jpg" alt="">Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-red-400 rounded bg-opacity-50 ">Rupture de stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-10 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14 " src="../img/product3.jpg" alt="">Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product4.jpg" alt="">Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product5.jpg" alt=""> Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product6.jpg" alt=""> Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product7.jpg" alt="">Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product8.jpg" alt="">Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        <tr>
+                            <td class="p-3 text-sm text-gray-700 flex mt-5"> <img class="h-14" src="../img/product9.jpg" alt="">Nom du produits</td>
+                            <td class="p-3 text-sm text-gray-700">XOF 1400/kg</td>
+                            <td class="p-3 text-sm text-gray-700">
+                                <span class="p-1.5 text-xs font-medium uppercase tracking-wider text-white bg-green-400 rounded bg-opacity-50 ">En stock</span> <button class="p-2 bg-green-700 hover:bg-green-900 rounded-full ml-24 text-white w-40">Ajouter au panier</button><button class="p-1"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                                  </button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div> 
+            </form>
+        </div>
+        <script>
+            // Sample function to simulate adding items to the cart
+            function addToCart() {
+                var counter = document.getElementById('cart-counter');
+                var currentCount = parseInt(counter.innerText);
+                counter.innerText = currentCount + 1;
+            }
+        </script>
+</body>
+</html>
